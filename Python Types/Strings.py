@@ -35,4 +35,33 @@ print("Hello" + " World")
 # String Looping
 print('5'*10)
 
-#"Page 3 of 36"
+# Basic Functions
+print(len('turtle'))
+
+# Basic Methods 
+"""
+Stripe, replace, split, startswith, index, endswith,capitalize,upper,lower,find,count
+"""
+
+print('aI am aloneas'.strip('a')) # hapus kedua ujuang awal dan akhir
+print('Help me'.replace('me','you'))
+print('but life is good !'.split())
+print('Need to make fire'.startswith('Nee'))
+print("and cook rice".endswith('k rice'))
+print('hello'.index('l'))
+print('still there?'.upper())
+print('Still THERE'.lower())
+print("ok, I am done".capitalize())
+print('hello'.find('l'))
+print('ohhh'.count('h'))
+
+# String Formatting
+name1 = 'Jokowi'
+name2 = 'Dodo'
+print(f'Hello there {name1} {name2}')
+print('Hello there {} {}'.format(name1,name2))
+print('Hello there %s %s' %(name1,name2))
+
+# Palindrom Words - Kata Keterbalikan - e.g:malam,reviver
+temp = 'reviver'
+print(bool(temp.find(temp[::-1])) + 1)
