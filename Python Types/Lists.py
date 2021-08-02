@@ -36,6 +36,54 @@ print(basket[:])
 
 # Remove from list
 print('----')
-basket = basket.pop()
+basket.pop()
 print(basket)
-basket.pop('oranges')
+print([1,2,3].clear())
+
+
+# Ordering
+print('----')
+number = [1,4,2]
+print(number.sort())
+print(sorted(number))
+print(list(reversed([1,4,3,0])))
+
+
+# Useful Functios
+print('----')
+print(1 in [1,2,3,4,5])
+print(min([1,2,3,4,5]))
+print(max([1,2,3,4,5]))
+print(sum([1,2,3,4,5]))
+
+
+# Get First and Last Elemnt
+number = [1,2,3,4,5]
+first,*x,last = number
+print(first)
+print(last)
+
+
+# Matrix
+print('----')
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+print(matrix[2][0])
+print(matrix[1][2])
+
+
+# Looping through a matrix by rows
+mx = [[1,2,3],[4,5,6]]
+for row in range(len(mx)) :
+  for col in range(len(mx[0])) :
+    print(mx[row][col],end='')
+
+
+# List Comprehensions
+# new_list[<action> for <item> in <iterator> if <some condition>]
+print('\n----')
+print([i for i in 'hello'])
+print([i*2 for i in [1,2,3]])
+print([i for i in range(0,10) if i % 2 == 0])
+
+
+print(list('Hello'))
