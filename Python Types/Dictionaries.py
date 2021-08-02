@@ -7,6 +7,7 @@ myDict = {'name' : 'Andre','age' : 30}
 print(myDict['name'])
 print(len(myDict))
 print(myDict.get('age'))
+print(myDict.get('ages','salah')) # jika gaada ages, maka salah
 
 # List
 print(list(myDict.keys()))
